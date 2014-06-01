@@ -44,8 +44,5 @@ Then /I should see all the movies/ do
 		movies.each do |movie|
 			assert page.body =~ /#{movie.title}/m, "#{movie.title} did not appear"
 		end
-	else
-		false
-	end
   #flunk "Unimplemented"
 end
